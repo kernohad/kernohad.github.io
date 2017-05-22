@@ -17,6 +17,12 @@
     		#home, #education, #experience {
     			padding-top: 1;
     		}
+    		.thumbnail {
+    			cursor: pointer;
+    		}
+    		.thumbnail:hover {
+    			border-color: red;
+    		}
 
     	</style>
 	
@@ -52,8 +58,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
-							<img src="gvsu.png" style="width: 300; height: 168;"></img>
+						<div class="thumbnail" data-toggle="modal" data-target="#myModal" data-model="GVSU">
+							<img src="gvsu.png" style="width: 300; height: 168;" ></img>
 							<div class="caption">
 								<h3>Grand Valley State University</h3>
 								<p>2015 - Present</p>
@@ -65,7 +71,7 @@
 					</div>
 
 					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
+						<div class="thumbnail" data-toggle="modal" data-target="#myModal" data-model="LCC">
 							<img src="lcc.png" style="width: 300; height: 168;"></img>
 							<div class="caption">
 								<h3>Lansing Community College</h3>
@@ -78,7 +84,7 @@
 					</div>
 
 					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
+						<div class="thumbnail" data-toggle="modal" data-target="#myModal" data-model="OE">
 							<img src="oe.png" style="width: 300; height: 168;"></img>
 							<div class="caption">
 								<h3>Ovie-Elsie High School</h3>
@@ -96,7 +102,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
+						<div class="thumbnail" data-toggle="modal" data-target="#myModal" data-model="KLA">
 							<img src="kla.png" style="width: 300; height: 168;"></img>
 							<div class="caption">
 								<h3>Kunz, Leigh & Associates</h3>
@@ -107,7 +113,7 @@
 					</div>
 
 					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
+						<div class="thumbnail" data-toggle="modal" data-target="#myModal" data-model="GPR">
 							<img src="gpr.png" style="width: 300; height: 168;"></img>
 							<div class="caption">
 								<h3>Genius Phone Repair</h3>
@@ -118,7 +124,7 @@
 					</div>
 
 					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
+						<div class="thumbnail" data-toggle="modal" data-target="#myModal" data-model="LS">
 							<img src="lakerstore.png" style="width: 300; height: 168;"></img>
 							<div class="caption">
 								<h3>GVSU Laker Store</h3>
@@ -131,10 +137,30 @@
 			</div>
 		</div>
 
-		
+		<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+       	...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 		<script src="jquery-3.2.1.min.js"></script>
 		<script src="bootstrap.min.js"></script>
+		<script src="application.js"></script>
 	</body>
 </html>
 
