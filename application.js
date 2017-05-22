@@ -10,7 +10,7 @@ $(document).ready(function() {
 	 });
 
 	 $("button").on('click', function() {
-	 	alert("This button does not do anything.");
+	 	location.href="bootstrap-webpage.html"
 	 });
 
 	 //$('#external-links').height($(document).height());
