@@ -1,154 +1,17 @@
 <html>
 	<head>
-		<script src="jquery-3.2.1.min.js"></script>
-		<script src="application.js"></script>
-
-
-		<title> Dylan's Web Stuff </title>
-
-		<style type="text/css">
-
-			html, body, h1, h2, h3, h4, ul, ol, li, p, a, .header{
-        		padding: 0;
-        		border: 0;
-        		margin: 0;
-      		}
-			h1 {
-				color: white;
-				padding: 10 0 10 0;
-			}
-			h2 {
-				margin: 10 5 10 5;
-				padding: 75 0 0 0;
-				border-bottom: solid 1px black ;
-			}
-			p {
-				padding:0 0 0 10;
-				margin: 0 auto 0 auto;
-				max-width: 50em;
-				
-			}
-			div {
-				height: auto;
-				width: auto;
-			}
-
-			
-			#nav ul {
-				list-style-type: none;
-    			margin: 0 0 200 0;
-    			padding: 0;
-    			overflow: hidden;
-    			background-color: #333;
-    			position: fixed;
-    			top: 0;
-    			width: 100%;
-
-			}
-			#nav li a {
-				display: block;
-    			color: white;
-    			text-align: center;
-    			padding: 14px 16px;
-    			text-decoration: none;
-			}
-			#nav li {
-    			float: right;
-			}
-			#welcome li {
-				padding: 15 15 15 15;
-				margin: 20 20 20 20;
-				display: inline-block;
-				background-color: lightblue;
-				border: solid 1px black;
-				border-radius: 25px;
-				text-align: center;
-
-			}
-			.button1 {
-				margin: 10 5 0 5;
-			}
-
-			.pic {
-				width: 179.5px;
-				height: 225px;
-				padding: 0;
-				display: block;
-				margin: 50 auto 20 auto;
-				border: solid 2px black;
-			}
-			#external-links a{
-				padding: 10 0 0 0;
-				text-decoration: none;
-				border-bottom: solid 1px black ;
-			}
-			#external-links li{
-				padding: 10 0 0 10;
-			}
-			#welcome, #about, #external-links {
-				margin: 0 auto 100 auto;
-				max-width: 50em;
-
-
-			}
-			#external-links li{
-				padding: 50 50 50 50 ;
-				margin: 20 20 20 20;
-				display: inline-block;
-				background-color: lightblue;
-				border: solid 1px black;
-				border-radius: 25px;
-				text-align: center;
-			}
-
-			#external-links a {
-				color: black;
-			}
-
-			#external-links ul {
-				text-align: center;
-			}
-
-
-		</style>
-
-
+		<title> Hello GVSU! </title>
+	<style>
+	.centered {
+	  position: fixed;
+	  top: 50%;
+	  left: 50%;
+	  /* bring your own prefixes */
+	  transform: translate(-50%, -50%);
+	}
+	</style>
 	</head>
 	<body>
-		<div id="nav" >
-			<ul>
-				<li style="float: left"><h1> Dylan Kernohan </h1></li>
-				<li><a href="#external-links">External Links</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#welcome">Home</a></li>
-				
-				
-			</ul>
-		</div>
-		<!-- ======================== WELCOME =================================-->
-		<div id="welcome">
-			<h2>Welcome</h2>
-			<p style="text-align: center; margin-top: 50;">This is a webpage I created to show what I have learend about HTML/CSS</p>
-			<ul style="text-align: center; margin-top: 20;">
-				<li id="button-box">
-					<h3>Open new page that uses Bootstrap!</h3>
-					<button class="button1"> Open </button>
-				</li>
-			</ul>
-     	</div>
-     	<!-- ======================== ABOUT =================================-->
-     	<div id="about">
-	     	<h2>Bio</h2>
-			<img src="bio-pic.png" class="pic">
-			<p style="text-align: center;">My name is Dylan Kernohan. I am currently studying computer science at Grand Valley State University. I love technology and have worked with it since high school. During my senior year I recieved my A+ certification and began to explore the IT field. Now I am interning at Kunz, Leigh and Associates (KL&A) as I explore the development side of technology. </p>
-		</div>
-		<!-- ========================EXTERNAL LINKS =================================-->
-		<div id="external-links">
-			<h2>Links</h2>
-			<ul id="links">
-				<li id="linkedin-box"><a href="http://linkedin.com/in/dylan-kernohan" target="_blank"><h3>LinkedIn</h3></a></li>
-				<li><a href="https://www.facebook.com/DylanJayMagic/" target="_blank" id='facebook-box'><h3>Facebook</h3></a></li>
-			</ul>
-		</div>
+		<h1 class="centered">Hello GVSU!</h1>
 	</body>
 </html>
